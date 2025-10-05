@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP AOZ1283PI
-D Conv DC-DC 3V to 36V Step Down Single-Out 0.8V to 30.6V 2.5A 8-Pin SOIC EP T/R
-K
-F http://aosmd.com/res/data_sheets/AOZ1283PI.pdf
-$ENDCMP
-#
-#End Doc Library

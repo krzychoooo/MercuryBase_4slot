@@ -1,9 +1,0 @@
-Manufacturer=Alpha & Omega Semiconductors
-PartNumber=AOZ1283PI
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline Packages
-PinCount=9
-Version=1.1
-Released=2019-12-29 00:41:36
-Downloaded=2025-07-03 07:45:57
-3D=Y
