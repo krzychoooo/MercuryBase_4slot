@@ -5,11 +5,157 @@
 	(uuid "f808412c-1ee7-4090-bcf9-9d49e7f55b00")
 	(paper "A4")
 	(title_block
-		(date "2024-06-26")
-		(rev "1.0.0")
+		(date "2025-07-02")
+		(rev "1.1.0")
 		(company "Krzychoooo")
 	)
 	(lib_symbols
+		(symbol "B800_2-rescue:CP_Small-device"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CP_Small-device"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CP_Small-device_0_1"
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CP_Small-device_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
@@ -810,29 +956,48 @@
 				)
 			)
 		)
-		(symbol "Regulator_Switching:AP62150Z6"
+		(symbol "Regulator_Switching:AOZ1283PI"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "AP62150Z6"
-				(at 6.35 -6.35 0)
+			(property "Reference" "IC1"
+				(at 1.524 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-				(at 0 0 0)
+			(property "Value" "AOZ1283PI"
+				(at 14.478 -3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SOIC127P600X170-9N"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://aosmd.com/res/data_sheets/AOZ1283PI.pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Conv DC-DC 3V to 36V Step Down Single-Out 0.8V to 30.6V 2.5A 8-Pin SOIC EP T/R"
+				(at 8.382 29.718 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -840,46 +1005,60 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP62150.pdf"
-				(at 0 0 0)
+			(property "Height" "1.7"
+				(at 26.67 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "1.5A, 1.3MHz Buck DC/DC Converter, adjustable output voltage, SOT-563"
-				(at 0 0 0)
+			(property "TME Electronic Components Part Number" ""
+				(at 26.67 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "1.5A 1.3MHz PWM Buck DC/DC"
-				(at 0 0 0)
+			(property "TME Electronic Components Price/Stock" ""
+				(at 26.67 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?563*"
-				(at 0 0 0)
+			(property "Manufacturer_Name" "Alpha & Omega Semiconductors"
+				(at 26.67 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(symbol "AP62150Z6_0_1"
+			(property "Manufacturer_Part_Number" "AOZ1283PI"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "AOZ1283PI_1_1"
 				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
+					(start 5.08 2.54)
+					(end 25.4 -17.78)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -888,12 +1067,10 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AP62150Z6_1_1"
-				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "VIN"
+				(pin passive line
+					(at 30.48 -5.08 180)
+					(length 5.08)
+					(name "LX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -908,10 +1085,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SW"
+				(pin passive line
+					(at 22.86 7.62 270)
+					(length 5.08)
+					(name "BST"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -926,9 +1103,9 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
+				(pin passive line
+					(at 19.05 -22.86 90)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -937,211 +1114,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Regulator_Switching:AP62200WU-7"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "AP62200WU-7"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SOT95P280X100-6N"
-				(at 21.59 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com//assets/Datasheets/AP62200_AP62201_AP62200T.pdf"
-				(at 21.59 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switching Voltage Regulators DCDC Conv HV Buck TSOT26 T&R 3K"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1"
-				(at 21.59 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "621-AP62200WU-7"
-				(at 21.59 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP62200WU-7?qs=P1JMDcb91o6Lrrt3Idazjw%3D%3D"
-				(at 21.59 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Diodes Incorporated"
-				(at 21.59 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "AP62200WU-7"
-				(at 21.59 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "AP62200WU-7_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 20.32 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1152,25 +1124,7 @@
 				(pin passive line
 					(at 0 -5.08 0)
 					(length 5.08)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -5.08 180)
-					(length 5.08)
-					(name "FB"
+					(name "FSW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1186,9 +1140,9 @@
 					)
 				)
 				(pin passive line
-					(at 25.4 -2.54 180)
+					(at 10.16 -22.86 90)
 					(length 5.08)
-					(name "EN"
+					(name "COMP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1204,9 +1158,9 @@
 					)
 				)
 				(pin passive line
-					(at 25.4 0 180)
+					(at 30.48 -12.7 180)
 					(length 5.08)
-					(name "BST"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1214,6 +1168,60 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 7.62 270)
+					(length 5.08)
+					(name "SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -11.43 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 7.62 270)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1347,186 +1355,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "felisiak01-rescue:CP-device"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "CP-device"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP* Elko* TantalC* C*elec c_elec* SMD*_Pol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CP-device_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end -2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 2.286 1.016)
-					(end -2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 1.016)
-					(end 2.286 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CP-device_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1768,10 +1596,22 @@
 		)
 	)
 	(junction
-		(at 163.83 74.93)
+		(at 175.26 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04e7f409-f474-4a96-860e-4d0ecd18f4c3")
+		(uuid "0c386094-06cb-492f-ad6b-66f7a800ce75")
+	)
+	(junction
+		(at 104.14 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dca251b-b5fa-46b8-9765-18542a936b41")
+	)
+	(junction
+		(at 123.19 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10603033-aed9-4aa8-8fe9-78ea5b5bc58e")
 	)
 	(junction
 		(at 81.28 96.52)
@@ -1784,6 +1624,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a5cba7c-cde8-4164-853a-b15b161fec48")
+	)
+	(junction
+		(at 199.39 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f9fb89a-f648-4396-88a1-b8ed767513df")
+	)
+	(junction
+		(at 129.54 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38524b57-8b65-4dab-af35-fdc0c349984c")
+	)
+	(junction
+		(at 132.08 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f5e42da-758d-451f-aa4d-bbca0cee7d98")
 	)
 	(junction
 		(at 175.26 96.52)
@@ -1828,10 +1686,10 @@
 		(uuid "87c2474e-3270-4cfb-9c2c-7e2c85915a66")
 	)
 	(junction
-		(at 175.26 86.36)
+		(at 148.59 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "87d12481-eb59-41fe-87b2-a405e88b2ff1")
+		(uuid "997c88ae-60dd-4cd2-af04-e34cb428bc24")
 	)
 	(junction
 		(at 181.61 74.93)
@@ -1864,12 +1722,6 @@
 		(uuid "b81d17ae-b151-4ead-a218-d88a0d9f2e82")
 	)
 	(junction
-		(at 105.41 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c36f93a0-e02c-45fe-890d-9b67f2f73cb8")
-	)
-	(junction
 		(at 181.61 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1882,16 +1734,22 @@
 		(uuid "d773cc76-a078-4246-b194-8ffdaf4ce3c4")
 	)
 	(junction
-		(at 229.87 60.96)
+		(at 199.39 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e1d786c4-c253-4ec1-82b4-7f60f45c8ef9")
+		(uuid "e00d95c6-cc07-4e92-9254-f067d617366a")
 	)
 	(junction
 		(at 232.41 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e323decb-d330-4d8c-80ab-ce26ee2b3ee3")
+	)
+	(junction
+		(at 90.17 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f41d3b86-7f95-416d-b9f8-87a883342cd6")
 	)
 	(junction
 		(at 180.34 133.35)
@@ -1910,6 +1768,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcb03628-ea0c-45a2-88c0-b4d0de65458c")
+	)
+	(junction
+		(at 148.59 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fed632e0-ff83-4522-b40b-bf31ec92b29b")
 	)
 	(wire
 		(pts
@@ -1943,6 +1807,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 60.96) (xy 148.59 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b0c0ed-627b-418d-8359-d164ed4f459b")
+	)
+	(wire
+		(pts
 			(xy 90.17 77.47) (xy 90.17 81.28)
 		)
 		(stroke
@@ -1950,6 +1824,16 @@
 			(type default)
 		)
 		(uuid "07fc0627-ece0-4941-be98-f206a2c7010b")
+	)
+	(wire
+		(pts
+			(xy 161.29 86.36) (xy 175.26 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "081d1772-197a-47db-be1e-d20a7790bd2b")
 	)
 	(wire
 		(pts
@@ -1983,6 +1867,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 49.53) (xy 148.59 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10d8907e-b025-4059-ac12-cdc9b8be5e19")
+	)
+	(wire
+		(pts
 			(xy 229.87 67.31) (xy 233.68 67.31)
 		)
 		(stroke
@@ -1993,17 +1887,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 67.31) (xy 138.43 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "137b8687-3f3f-4ae0-9a86-dba33c8a7612")
-	)
-	(wire
-		(pts
-			(xy 139.7 96.52) (xy 175.26 96.52)
+			(xy 139.7 96.52) (xy 148.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2013,7 +1897,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 74.93) (xy 175.26 74.93)
+			(xy 160.02 60.96) (xy 175.26 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2030,6 +1914,16 @@
 			(type default)
 		)
 		(uuid "1e7a844f-3fe7-4a7e-8109-ca3bbe19e64b")
+	)
+	(wire
+		(pts
+			(xy 148.59 57.15) (xy 148.59 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ec98224-7b1a-4595-bc06-4601be62c0fc")
 	)
 	(wire
 		(pts
@@ -2063,6 +1957,26 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 68.58) (xy 161.29 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2649225b-deb5-4384-ad17-9476819eafbe")
+	)
+	(wire
+		(pts
+			(xy 123.19 96.52) (xy 132.08 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "268dda8f-e3d0-438b-af81-9b96b8276c9e")
+	)
+	(wire
+		(pts
 			(xy 175.26 86.36) (xy 175.26 87.63)
 		)
 		(stroke
@@ -2080,6 +1994,16 @@
 			(type default)
 		)
 		(uuid "321405f2-729e-4dbd-b319-93c363132966")
+	)
+	(wire
+		(pts
+			(xy 123.19 92.71) (xy 123.19 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343a005e-2af4-4049-a513-cba4625e7213")
 	)
 	(wire
 		(pts
@@ -2113,16 +2037,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 72.39) (xy 105.41 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b808612-4e07-4464-9a85-4c8673252462")
-	)
-	(wire
-		(pts
 			(xy 71.12 96.52) (xy 81.28 96.52)
 		)
 		(stroke
@@ -2133,7 +2047,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 96.52) (xy 212.09 96.52)
+			(xy 189.23 96.52) (xy 199.39 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2143,13 +2057,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 82.55) (xy 149.86 86.36)
+			(xy 104.14 78.74) (xy 104.14 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3fcdf4f3-a5ce-427d-bf6c-0ae6f32c3a99")
+		(uuid "461fbb62-93f4-453f-a460-9c628ebfb853")
 	)
 	(wire
 		(pts
@@ -2173,23 +2087,23 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 82.55) (xy 138.43 82.55)
+			(xy 104.14 73.66) (xy 104.14 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53b3ad1c-e2cf-4a4f-80b1-44895033588a")
+		(uuid "4c2ae2d4-fa05-4649-b956-bb9d866dbdb9")
 	)
 	(wire
 		(pts
-			(xy 146.05 74.93) (xy 163.83 74.93)
+			(xy 121.92 48.26) (xy 121.92 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55cfb513-a9ef-46c5-8725-2ada9820b5d1")
+		(uuid "56526f84-fbb8-4d9d-850a-80390a410cf5")
 	)
 	(wire
 		(pts
@@ -2200,16 +2114,6 @@
 			(type default)
 		)
 		(uuid "5657bced-c825-4f19-b0f7-e8b7afa2d23e")
-	)
-	(wire
-		(pts
-			(xy 138.43 77.47) (xy 138.43 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "574d5d67-a506-4a7b-9122-b426658995f0")
 	)
 	(wire
 		(pts
@@ -2233,13 +2137,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 60.96) (xy 229.87 60.96)
+			(xy 129.54 33.02) (xy 248.92 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6119587a-ebd4-4e3a-ad11-6923d46d96ba")
+		(uuid "611f38bc-6ead-4636-9536-7d3fed2d133d")
 	)
 	(wire
 		(pts
@@ -2263,16 +2167,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 63.5) (xy 229.87 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65dd5772-feec-4a09-b0d0-2b156dcf1491")
-	)
-	(wire
-		(pts
 			(xy 168.91 125.73) (xy 168.91 133.35)
 		)
 		(stroke
@@ -2293,23 +2187,53 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 86.36) (xy 175.26 86.36)
+			(xy 148.59 45.72) (xy 135.89 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68db8d58-2fc9-472d-9b9f-4e1e7ad8db86")
+		(uuid "6bbf8953-5d27-4bbe-aa15-99611e90c7c8")
 	)
 	(wire
 		(pts
-			(xy 113.03 74.93) (xy 107.95 74.93)
+			(xy 90.17 43.18) (xy 90.17 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a8e9096-73f2-4b59-ad2c-2e249655afe8")
+		(uuid "7049855f-e4b9-4683-8f15-bcf80205aea9")
+	)
+	(wire
+		(pts
+			(xy 199.39 74.93) (xy 204.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70609a62-4a3e-4632-b8a0-0d042c560985")
+	)
+	(wire
+		(pts
+			(xy 148.59 96.52) (xy 175.26 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7125c95f-df18-4f10-a901-b77ac7cfaf5c")
+	)
+	(wire
+		(pts
+			(xy 148.59 60.96) (xy 148.59 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762c632a-9cf5-4097-bbb4-b66f4d54fb38")
 	)
 	(wire
 		(pts
@@ -2333,23 +2257,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 63.5) (xy 229.87 63.5)
+			(xy 104.14 96.52) (xy 123.19 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78a2a1a4-e72a-4fdf-93d2-53dc30e0ac43")
+		(uuid "79afe792-81e0-4d63-8979-cf04b61a34a3")
 	)
 	(wire
 		(pts
-			(xy 107.95 74.93) (xy 107.95 85.09)
+			(xy 123.19 86.36) (xy 123.19 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8157f8c5-b666-4ecb-9e9f-f1cad5833ffb")
+		(uuid "7b565141-a43e-43c6-aa5d-612432d5c6b1")
 	)
 	(wire
 		(pts
@@ -2363,6 +2287,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 96.52) (xy 139.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b1761c4-596a-4036-ba23-32f1ad6c55ce")
+	)
+	(wire
+		(pts
 			(xy 175.26 80.01) (xy 175.26 81.28)
 		)
 		(stroke
@@ -2373,7 +2307,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 77.47) (xy 81.28 81.28)
+			(xy 129.54 33.02) (xy 129.54 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de5d8a2-fd2b-4541-aaf9-7b8b336f9723")
+	)
+	(wire
+		(pts
+			(xy 81.28 77.47) (xy 81.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2390,6 +2334,16 @@
 			(type default)
 		)
 		(uuid "98f59aa9-d1c4-40df-854f-471b76c70669")
+	)
+	(wire
+		(pts
+			(xy 199.39 74.93) (xy 199.39 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "993f9ba5-0bdc-4050-8bc5-8c80c82e9bb7")
 	)
 	(wire
 		(pts
@@ -2413,6 +2367,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 87.63) (xy 199.39 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05dea3d-2ed6-404c-91aa-135b865a229d")
+	)
+	(wire
+		(pts
 			(xy 191.77 133.35) (xy 180.34 133.35)
 		)
 		(stroke
@@ -2433,13 +2397,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 77.47) (xy 113.03 77.47)
+			(xy 175.26 60.96) (xy 175.26 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a84c6552-52e3-4999-a073-1332aa894591")
+		(uuid "a9ec4f86-0408-4761-9b1c-e37ee1b29b74")
 	)
 	(wire
 		(pts
@@ -2453,23 +2417,23 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 74.93) (xy 204.47 74.93)
+			(xy 129.54 45.72) (xy 129.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac035792-8d0b-4226-893c-cf956c1a57fd")
+	)
+	(wire
+		(pts
+			(xy 191.77 74.93) (xy 199.39 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b0b68230-3f49-40e3-9078-8da1c603c3b3")
-	)
-	(wire
-		(pts
-			(xy 163.83 74.93) (xy 165.1 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b367a9aa-87fb-4a62-bc50-7c48e39e2028")
 	)
 	(wire
 		(pts
@@ -2483,16 +2447,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 85.09) (xy 146.05 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b971b85e-316e-4bc7-b6e6-9ef5841c9d08")
-	)
-	(wire
-		(pts
 			(xy 168.91 118.11) (xy 168.91 120.65)
 		)
 		(stroke
@@ -2500,6 +2454,16 @@
 			(type default)
 		)
 		(uuid "bab3907f-a9e5-485c-a299-7c86d73a4efd")
+	)
+	(wire
+		(pts
+			(xy 132.08 78.74) (xy 132.08 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce8fae6-fd89-4c34-962d-45b97286080e")
 	)
 	(wire
 		(pts
@@ -2533,6 +2497,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 33.02) (xy 248.92 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c798f6ea-230f-4317-9493-83d1eb8caa9f")
+	)
+	(wire
+		(pts
 			(xy 232.41 88.9) (xy 232.41 96.52)
 		)
 		(stroke
@@ -2540,36 +2514,6 @@
 			(type default)
 		)
 		(uuid "c9cc5cee-39a0-41f4-8b3c-548fc05a16cf")
-	)
-	(wire
-		(pts
-			(xy 138.43 67.31) (xy 138.43 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc7ffa25-f80d-48e4-bff9-df33ddba4431")
-	)
-	(wire
-		(pts
-			(xy 105.41 72.39) (xy 105.41 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccf4931b-6181-4294-8971-b191155d8617")
-	)
-	(wire
-		(pts
-			(xy 146.05 85.09) (xy 146.05 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd92391b-1281-4087-9bf5-4eee5aa5adbc")
 	)
 	(wire
 		(pts
@@ -2593,23 +2537,23 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 60.96) (xy 233.68 60.96)
+			(xy 148.59 85.09) (xy 148.59 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d58cdda4-50a2-48b3-a12e-e1b679dc337a")
+		(uuid "d6ba2d9c-73c1-437e-b751-ace2c7da5532")
 	)
 	(wire
 		(pts
-			(xy 90.17 96.52) (xy 105.41 96.52)
+			(xy 104.14 60.96) (xy 113.03 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db5f55ba-652f-4739-89b5-0857964cba09")
+		(uuid "dafb6ac6-1e1c-4475-8c21-cf230ffd4f31")
 	)
 	(wire
 		(pts
@@ -2653,6 +2597,36 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 60.96) (xy 154.94 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3bba87c-3a07-4c13-b481-6f8aef8f6e95")
+	)
+	(wire
+		(pts
+			(xy 199.39 96.52) (xy 212.09 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7349828-1421-466d-ad56-16753f54e336")
+	)
+	(wire
+		(pts
+			(xy 135.89 45.72) (xy 135.89 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e84e684f-f7c9-458a-8159-6d6b2de4117b")
+	)
+	(wire
+		(pts
 			(xy 212.09 96.52) (xy 227.33 96.52)
 		)
 		(stroke
@@ -2663,13 +2637,33 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 60.96) (xy 90.17 77.47)
+			(xy 90.17 33.02) (xy 90.17 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ea7f6b26-9077-4440-9dcc-69196a1f430a")
+	)
+	(wire
+		(pts
+			(xy 143.51 68.58) (xy 161.29 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd258db-c28f-438d-b66b-0fc99dd48b05")
+	)
+	(wire
+		(pts
+			(xy 90.17 33.02) (xy 129.54 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0561bc-c6a2-4bb5-9e11-b3466d25ecb9")
 	)
 	(wire
 		(pts
@@ -2683,13 +2677,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 96.52) (xy 139.7 96.52)
+			(xy 90.17 96.52) (xy 104.14 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f6b53680-1724-4e4e-b7f5-e1eeaf6d2e5e")
+		(uuid "f651e0e1-f8d1-43a8-9b05-6745682ed517")
 	)
 	(wire
 		(pts
@@ -2723,13 +2717,35 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 80.01) (xy 248.92 63.5)
+			(xy 121.92 43.18) (xy 90.17 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdf1a246-fa67-4ed4-93a9-a41758de037f")
+		(uuid "ff09946e-38ce-4302-a2c1-977bacb3dcf7")
+	)
+	(text "52,2"
+		(exclude_from_sim no)
+		(at 168.148 80.518 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "43de2239-befa-425c-ae46-a28f5eb4664f")
+	)
+	(text "zmienić na 0603 RF-GSB190TS-BC"
+		(exclude_from_sim no)
+		(at 201.676 109.982 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f134c5f-8f72-42e4-977f-2cb00d83d286")
 	)
 	(text "POWER"
 		(exclude_from_sim no)
@@ -2745,7 +2761,6 @@
 	(hierarchical_label "3.3V"
 		(shape input)
 		(at 191.77 106.68 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2757,7 +2772,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 233.68 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2769,7 +2783,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 180.34 106.68 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2781,7 +2794,6 @@
 	(hierarchical_label "12V"
 		(shape input)
 		(at 168.91 106.68 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2793,7 +2805,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 233.68 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2805,7 +2816,6 @@
 	(hierarchical_label "3.3V"
 		(shape input)
 		(at 233.68 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2816,8 +2826,7 @@
 	)
 	(hierarchical_label "12V"
 		(shape input)
-		(at 233.68 60.96 0)
-		(fields_autoplaced yes)
+		(at 248.92 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2825,95 +2834,6 @@
 			(justify left)
 		)
 		(uuid "dec72344-f349-4bc3-8507-7ba743b3d295")
-	)
-	(symbol
-		(lib_id "Regulator_Switching:AP62150Z6")
-		(at 49.53 137.16 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "034a05b6-6813-4c90-8b94-66e411f22781")
-		(property "Reference" "U2"
-			(at 49.53 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP62200Z6-7"
-			(at 49.53 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-			(at 49.53 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2210280930_Diodes-Incorporated-AP62200Z6-7_C2158024.pdf"
-			(at 49.53 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC part#" "C2158024"
-			(at 49.53 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb946022-c246-45ec-a069-f272ab85c4bd")
-		)
-		(pin "2"
-			(uuid "f4bf5848-5468-447d-8848-70baca37b123")
-		)
-		(pin "3"
-			(uuid "32a2b776-7210-4e2d-b129-c02397957de4")
-		)
-		(pin "4"
-			(uuid "e6bc2d5a-1b28-454a-8c42-9c1183cd0448")
-		)
-		(pin "5"
-			(uuid "c41944f0-00d9-48ec-bfbc-b9df4855db61")
-		)
-		(pin "6"
-			(uuid "242fdc4d-47b0-4c23-8550-f9da8083b213")
-		)
-		(instances
-			(project "MercuryBase_4slot_V100"
-				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
@@ -2976,6 +2896,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,54"
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "LDI1117-3.3H-DIO"
+			(at 212.09 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42847e66-8ffe-4f5f-9402-06f59fbdc602")
 		)
@@ -2989,6 +2954,129 @@
 			(project "MercuryBase_4slot_V100"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 129.54 41.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b260066-9aa4-4ab0-9bbc-e9490d0abd21")
+		(property "Reference" "C10"
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF/50V"
+			(at 132.842 37.084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 128.5748 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C14663"
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603B104K500CT"
+			(at 129.54 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d4d361d-c3b2-4d0c-808f-818f4ee90ef3")
+		)
+		(pin "2"
+			(uuid "3e91f6b5-2c18-44b6-a2db-40cb68c4a42d")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -3013,7 +3101,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF/25V"
+		(property "Value" "22uF/10V"
 			(at 191.77 95.25 90)
 			(effects
 				(font
@@ -3058,6 +3146,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 189.23 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 189.23 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 189.23 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,26"
+			(at 189.23 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0805X226M100CT"
+			(at 189.23 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abed64d4-9ccb-47db-baa4-96a1769a0302")
 		)
@@ -3090,7 +3223,7 @@
 				)
 			)
 		)
-		(property "Value" "1,2K"
+		(property "Value" "1,3K"
 			(at 172.72 83.82 90)
 			(effects
 				(font
@@ -3135,6 +3268,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603SAF1301T5E"
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b653e60-baba-4e26-988c-35cac409a2d9")
 		)
@@ -3155,7 +3333,7 @@
 		(at 62.23 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "14053883-cb59-47ff-82e6-6c78f3920b6f")
@@ -3212,6 +3390,60 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,4"
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MARITEX" "KF2EDGV-Y-3.50-2P"
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" ""
+			(at 62.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e659d6eb-6ef7-4a21-a8e7-54a71ab20d62")
 		)
@@ -3229,7 +3461,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 167.64 74.93 90)
+		(at 157.48 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3237,23 +3469,23 @@
 		(dnp no)
 		(uuid "15fdbbe4-1338-44ea-b07d-ce8c07060f9f")
 		(property "Reference" "L1"
-			(at 167.64 69.85 90)
+			(at 157.48 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4,7uH"
-			(at 170.18 72.39 90)
+		(property "Value" "22uH"
+			(at 160.02 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_TracoPower_TCK-047_5.2x5.8mm"
-			(at 167.64 74.93 0)
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H6mm"
+			(at 157.48 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3261,8 +3493,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ".\\ELEMENTY\\CMLF0504-4R7MTT.pdf"
-			(at 167.64 74.93 0)
+		(property "Datasheet" "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.tme.eu/Document/d1f8b47d020ebf11f3b92c6891638dfa/de.pdf"
+			(at 157.48 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +3503,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 74.93 0)
+			(at 157.48 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3279,8 +3511,53 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC part#" "C405142"
-			(at 167.64 74.93 0)
+		(property "LCSC part#" ""
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "DE1205-22"
+			(at 157.48 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "1,3"
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 157.48 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3298,83 +3575,6 @@
 			(project "MercuryBase_4slot_V100"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "felisiak01-rescue:CP-device")
-		(at 81.28 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2248053b-c987-4c75-96ca-14b5253bf1a6")
-		(property "Reference" "C3"
-			(at 81.915 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330uF 35V"
-			(at 77.47 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 82.2452 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC part#" "C3350"
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7fe3266-749c-4947-ad75-48832814629f")
-		)
-		(pin "2"
-			(uuid "eccf2bd9-629a-435d-a48d-2c747f45fbde")
-		)
-		(instances
-			(project "MercuryBase_4slot_V100"
-				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -3442,6 +3642,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 168.91 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 168.91 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 168.91 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "SMD0603-10K-1%"
+			(at 168.91 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 168.91 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f611700-2f0c-4ee6-9407-513ba5a6182b")
 		)
@@ -3474,7 +3719,7 @@
 				)
 			)
 		)
-		(property "Value" "SS210"
+		(property "Value" "SS56F-DC"
 			(at 75.565 73.66 0)
 			(effects
 				(font
@@ -3517,6 +3762,51 @@
 				(hide yes)
 			)
 		)
+		(property "TME" "SS56F-DC"
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,4"
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4dc46af4-ede5-4a77-b03d-c6caaf672886")
 		)
@@ -3527,6 +3817,192 @@
 			(project "MercuryBase_4slot_V100"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:AOZ1283PI")
+		(at 113.03 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f8722f3-e5eb-4cbe-8b08-74333928b0d4")
+		(property "Reference" "IC1"
+			(at 114.554 49.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AOZ1283PI"
+			(at 127.508 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:Diodes_SO-8EP"
+			(at 139.7 150.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://aosmd.com/res/data_sheets/AOZ1283PI.pdf"
+			(at 139.7 250.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Conv DC-DC 3V to 36V Step Down Single-Out 0.8V to 30.6V 2.5A 8-Pin SOIC EP T/R"
+			(at 121.412 26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.7"
+			(at 139.7 450.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "TME Electronic Components Part Number" ""
+			(at 139.7 550.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "TME Electronic Components Price/Stock" ""
+			(at 139.7 650.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Alpha & Omega Semiconductors"
+			(at 139.7 750.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AOZ1283PI"
+			(at 139.7 850.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "2"
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "AOZ1283PI"
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "f0a57ff4-d0a3-4fb6-b9fd-2f34e9d122b2")
+		)
+		(pin "7"
+			(uuid "0ca89b89-0362-4f83-8339-1e613249663a")
+		)
+		(pin "3"
+			(uuid "484f105e-0231-48b3-a88d-244eda243798")
+		)
+		(pin "9"
+			(uuid "b6f0472b-4030-4e82-9010-602f86f89b5c")
+		)
+		(pin "5"
+			(uuid "12f420f7-b302-4c71-a0c1-42b63bf9ef01")
+		)
+		(pin "2"
+			(uuid "abb8bf86-c539-4e62-b167-aef1d6595b1d")
+		)
+		(pin "4"
+			(uuid "06c447d6-7c22-4005-a28c-171de009440f")
+		)
+		(pin "1"
+			(uuid "ae2cbc56-f27d-451e-940a-1ee841ab8185")
+		)
+		(pin "8"
+			(uuid "1c03fd18-8f9f-42ca-bf15-1a9e4a46a917")
+		)
+		(instances
+			(project ""
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -3551,7 +4027,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF/25V"
+		(property "Value" "22uF/10V"
 			(at 184.15 95.25 90)
 			(effects
 				(font
@@ -3588,6 +4064,51 @@
 			)
 		)
 		(property "LCSC part#" "C45783"
+			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,26"
+			(at 181.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0805X226M100CT"
 			(at 181.61 85.09 0)
 			(effects
 				(font
@@ -3673,6 +4194,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "SMD0603-10K-1%"
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1df5cf77-c9d2-4be9-8cad-3b91207af2f1")
 		)
@@ -3689,53 +4255,51 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:AP62200WU-7")
-		(at 113.03 72.39 0)
+		(lib_id "felisiak01-rescue:R_Small-device")
+		(at 104.14 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89e06d72-ea36-44cf-a67d-299299c54bdd")
-		(property "Reference" "IC201"
-			(at 125.73 64.77 0)
+		(uuid "75b98ea9-06f5-438e-b70b-e0eb5f358ca4")
+		(property "Reference" "R8"
+			(at 99.695 75.565 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AP62200WU-7"
-			(at 125.73 67.31 0)
+		(property "Value" "100K"
+			(at 101.6 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT95P280X100-6N"
-			(at 134.62 167.31 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 106.045 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/AP62200_AP62201_AP62200T.pdf"
-			(at 134.62 267.31 0)
+		(property "Datasheet" ""
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 113.03 72.39 0)
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3743,58 +4307,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "1"
-			(at 134.62 467.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "621-AP62200WU-7"
-			(at 134.62 567.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP62200WU-7?qs=P1JMDcb91o6Lrrt3Idazjw%3D%3D"
-			(at 134.62 667.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Diodes Incorporated"
-			(at 134.62 767.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "AP62200WU-7"
-			(at 134.62 867.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "LCSC part#" "C1323282"
-			(at 113.03 72.39 0)
+		(property "LCSC part#" "-C25804"
+			(at 104.14 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,28 +4316,316 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "fb159ce4-b102-4a97-9d65-b203ec429c12")
+		(property "Mouser Part Number" ""
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "5"
-			(uuid "3c9e261a-b40a-4043-a044-a53bcf615ddf")
+		(property "Mouser Price/Stock" ""
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "aaa57148-2d76-4945-babe-d932d3eae803")
+		(property "Cena" "0,01"
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603SAF1003T5E"
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "6957800a-8400-4206-9085-bf9b6c76f933")
+			(uuid "6f2d8ae3-1bcd-46a2-87d5-7d19a582828d")
 		)
-		(pin "6"
-			(uuid "1f6a58db-806c-4661-83af-636b1a4e4d7d")
-		)
-		(pin "4"
-			(uuid "1df8eb43-c2b6-4a27-9c1c-0fe67945faaa")
+		(pin "2"
+			(uuid "4775c715-b994-4736-8278-6d385fb86a03")
 		)
 		(instances
-			(project "MercuryBase_4slot_V100"
+			(project "MercuryBase_4slot"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
-					(reference "IC201")
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "B800_2-rescue:CP_Small-device")
+		(at 81.28 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "850176c9-1d6f-4f1d-8b70-9ce3bb2d1577")
+		(property "Reference" "C11"
+			(at 81.915 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF/35V"
+			(at 77.216 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 84.455 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C402500"
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,3"
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "VS1V101ME077000CE0"
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "417ea451-5a97-4037-a118-e9ac4af16787")
+		)
+		(pin "2"
+			(uuid "9d90e0de-7833-47d2-a0f8-dbb454f41542")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "felisiak01-rescue:CONN_01X02-conn")
+		(at 49.53 78.74 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "88e9c013-838e-42bf-a0db-bd426c66e355")
+		(property "Reference" "P2"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15EDGK-3.5-02P-14-00Z(H)"
+			(at 52.705 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C7466033"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "1,7"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MARITEX" "15EDGK-3.5-02P-14-00Z(H)"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d77b431-41c2-46f2-8f3e-145580d63f6c")
+		)
+		(pin "2"
+			(uuid "80404279-ebc5-45dd-9876-d231a1b22fa6")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "P2")
 					(unit 1)
 				)
 			)
@@ -3891,6 +4693,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603SAF2701T5E"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42bf6839-ff5d-4b42-92bb-275c12e9edca")
 		)
@@ -3908,7 +4755,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 163.83 71.12 180)
+		(at 148.59 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3916,7 +4763,7 @@
 		(dnp no)
 		(uuid "a7e2a2f4-4532-4d17-b0b3-b58182256f9a")
 		(property "Reference" "C5"
-			(at 161.29 72.39 0)
+			(at 146.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3925,7 +4772,7 @@
 			)
 		)
 		(property "Value" "100nF/50V"
-			(at 170.18 66.04 0)
+			(at 151.892 48.514 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3934,7 +4781,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 162.8648 67.31 0)
+			(at 147.6248 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3943,7 +4790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 71.12 0)
+			(at 148.59 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +4799,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 71.12 0)
+			(at 148.59 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,7 +4808,52 @@
 			)
 		)
 		(property "LCSC part#" "C14663"
-			(at 163.83 71.12 0)
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 148.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603B104K500CT"
+			(at 148.59 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4046,6 +4938,33 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 254 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 254 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 254 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f3a4a76b-7f87-489c-b2c4-1002c2fca860")
 		)
@@ -4062,6 +4981,257 @@
 			(project "MercuryBase_4slot_V100"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
 					(reference "J201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "felisiak01-rescue:D-device")
+		(at 148.59 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2cbdd28-ac1c-4fa0-aef5-d223fb9705fb")
+		(property "Reference" "D2"
+			(at 142.24 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS56F-DC"
+			(at 144.78 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C14996"
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "SS56F-DC"
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,4"
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 148.59 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6af7860-26ec-44d0-9186-e4e033593a66")
+		)
+		(pin "2"
+			(uuid "0913d9d1-3f0b-4b7c-8d30-e7a379b7a887")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "felisiak01-rescue:R_Small-device")
+		(at 123.19 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf6a8e9b-09db-4908-8834-82c553aad484")
+		(property "Reference" "R6"
+			(at 118.745 89.535 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20K"
+			(at 120.65 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 125.095 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "-C25804"
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Pole6" ""
+			(at 123.19 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0805S8F2002T5E"
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc49f508-8ac6-4d33-877a-ce5f02067577")
+		)
+		(pin "2"
+			(uuid "5a83bb89-7d85-4ae0-b8fa-778c07598c2b")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4121,6 +5291,51 @@
 			)
 		)
 		(property "LCSC part#" "C23196"
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603SAJ0513T5E"
+			(at 175.26 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
 			(at 175.26 77.47 0)
 			(effects
 				(font
@@ -4208,6 +5423,33 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a516ed78-1568-4869-a435-8c801d4253cc")
 		)
@@ -4241,7 +5483,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF/50V"
+		(property "Value" "100nF/16V"
 			(at 215.9 82.55 0)
 			(effects
 				(font
@@ -4286,6 +5528,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,03"
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "CC0603KRX7R7BB104"
+			(at 227.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b656a9b6-8c21-4ffb-9f58-b3ae3e63ccc3")
 		)
@@ -4309,7 +5596,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d861f8d2-f965-4f9e-9f1f-288824ac3fd0")
 		(property "Reference" "C4"
 			(at 93.98 83.8199 0)
@@ -4320,8 +5606,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF/25V"
-			(at 93.98 86.3599 0)
+		(property "Value" "4,7uF/35V"
+			(at 91.948 96.012 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4357,6 +5643,51 @@
 			)
 		)
 		(property "LCSC part#" "C45783"
+			(at 90.17 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 90.17 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 90.17 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 90.17 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,4"
+			(at 90.17 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "GRT21BC8YA475KE13L"
 			(at 90.17 85.09 0)
 			(effects
 				(font
@@ -4442,6 +5773,51 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" ""
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,01"
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "0603SAF1801T5E"
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66b6a8bb-548d-4302-b53a-a1b601efb18e")
 		)
@@ -4452,6 +5828,252 @@
 			(project "MercuryBase_4slot_V100"
 				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
 					(reference "R202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 82.55 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0a5669a-29ef-4e64-94e9-3e992c26cf1a")
+		(property "Reference" "C9"
+			(at 120.65 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 127.254 80.772 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 122.2248 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C14663"
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,03"
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "CL21B102KBANNNC"
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba77d1a4-b75b-40f8-a19b-b485edec1ee3")
+		)
+		(pin "2"
+			(uuid "60ed5ac8-1b71-4b93-a846-16b923fbefa1")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "B800_2-rescue:CP_Small-device")
+		(at 199.39 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eef973b8-2e4e-4fbd-a4bf-620f6f134676")
+		(property "Reference" "C3"
+			(at 200.025 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF/6,3V"
+			(at 195.326 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 202.565 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC part#" "C402500"
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cena" "0,4"
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TME" "CK0J107M6L006VR"
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35f6627f-8d45-4503-8b12-58161e13fe4d")
+		)
+		(pin "2"
+			(uuid "30c44e8d-f32a-407b-a60c-783d7d1cd43e")
+		)
+		(instances
+			(project "MercuryBase_4slot"
+				(path "/24a8a612-3c14-4113-89a4-eef82c4a85a6/07c46ad2-7210-4c33-8cb8-177c054edc45"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4513,6 +6135,33 @@
 			)
 		)
 		(property "LCSC part#" "C84256"
+			(at 168.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 168.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 168.91 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
 			(at 168.91 114.3 0)
 			(effects
 				(font
@@ -4592,6 +6241,33 @@
 			)
 		)
 		(property "LCSC part#" "C84256"
+			(at 191.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 191.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 191.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SOSelectronic" ""
 			(at 191.77 114.3 0)
 			(effects
 				(font

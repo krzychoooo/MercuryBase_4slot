@@ -14,11 +14,10 @@
 _autosave-*
 *.tmp
 *-save.pro
-*-save.kicad_pcb
+*.kicad_pcb
 fp-info-cache
 
-# Netlist files (exported from Eeschema)
-*.net
+# Netlist files (exported from Eeschema)*.net
 
 # Autorouter files (exported from Pcbnew)
 *.dsn
@@ -27,3 +26,17 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+*auto_saved_files*
+ELEMENTY/
+FOTO/
+JLCPCB/
+board2pdf.config.ini
+fabrication-toolkit-options.json
+fp-lib-table
+pcb_coils/
+plots/
+production/
+test.py
+testGita.txt
+.gitignore
