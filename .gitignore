@@ -37,6 +37,7 @@ fp-lib-table
 pcb_coils/
 plots/
 production/
+lib/
 test.py
 testGita.txt
 .gitignore
