@@ -20,6 +20,7 @@ Soft:
 3. <a href="https://github.com/krzychoooo/Mercury_Soft_Relay_x3_V100" target="_blank">Mercury_Soft_Relay_x3_V100</a>
 4. <a href="https://github.com/krzychoooo/Mercury_Soft_Input5x_V1.0.0" target="_blank">Mercury_Soft_Input5x_V1.0.0</a>   
 
+## Custom project.   
 You can connect your own custom modules to the structure.   
 These can be quickly created using the Kicad template I provided.   
 <a href="https://github.com/krzychoooo/MercuryTemplate" target="_blank">Kicad Template</a>    
@@ -27,4 +28,8 @@ After loading the template, you'll see a connector in the schematic window along
 <picture><img src="img/TemplateSCH.PNG"></picture>   
 In the PCB window, you'll see the board outline with the correctly positioned connector.   
 <picture><img src="img/TemplatePCB.PNG"></picture>   
+
+## Mechanical Solutions:   
+The MERCURY baseboard fits into the DM108-150-14-100AH ​​housing.
+<picture><img src="img/DM108-150-14-100AH.png"></picture>
 
