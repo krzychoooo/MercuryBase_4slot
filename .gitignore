@@ -1,6 +1,8 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+*.kicad_pcb
+
 # Temporary files
 *.000
 *.bak
@@ -11,10 +13,10 @@
 *.kicad_prl
 *.sch-bak
 *~
+~*
 _autosave-*
 *.tmp
 *-save.pro
-*.kicad_pcb
 fp-info-cache
 
 # Netlist files (exported from Eeschema)*.net
@@ -28,16 +30,12 @@ fp-info-cache
 *.csv
 
 *auto_saved_files*
-ELEMENTY/
+Elementy/
 FOTO/
 JLCPCB/
 board2pdf.config.ini
 fabrication-toolkit-options.json
 fp-lib-table
-pcb_coils/
-plots/
 production/
 lib/
-test.py
-testGita.txt
 .gitignore
