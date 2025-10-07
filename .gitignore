@@ -2,6 +2,7 @@
 # Format documentation: https://kicad.org/help/file-formats/
 
 *.kicad_pcb
+pcb_coils/
 
 # Temporary files
 *.000
