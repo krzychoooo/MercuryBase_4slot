@@ -4,6 +4,7 @@ The idea behind the MERCURY project is to create a controller that doesn't conta
 The required peripheral modules can be inserted into the baseboard.
 <picture><img src="img/Mercury600x379.png"></picture>   
 <picture><img src="img/Base8slot.png"></picture>   
+The housing is adapted for mounting on a DIN35 rail.  
 
 The current list of available modules is provided below.
 ## Links:   
@@ -32,4 +33,4 @@ In the PCB window, you'll see the board outline with the correctly positioned co
 ## Mechanical Solutions:   
 The MERCURY baseboard fits into the DM108-150-14-100AH ​​housing.
 <picture><img src="img/DM108-150-14-100AH.png"></picture>
-
+The housing is adapted for mounting on a DIN35 rail.
