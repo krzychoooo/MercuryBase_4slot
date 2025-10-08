@@ -3,10 +3,10 @@
 The idea behind the MERCURY project is to create a controller that doesn't contain any peripherals.   
 The required peripheral modules can be inserted into the baseboard.
 <picture><img src="img/Mercury600x379.png"></picture>   
+<picture><img src="img/Base8slot.png"></picture>   
 
-The current list of available modules is provided below.   
+The current list of available modules is provided below.
 ## Links:   
-
 Hardware:   
 1. <a href="https://github.com/krzychoooo/Mercury_PCB_Ethernet_V100" target="_blank">Mercury_PCB_Ethernet_V100</a>
 2. <a href="https://github.com/krzychoooo/Mercury_PCB_NPNOUT_x8_V100" target="_blank">Mercury_PCB_NPNOUT_x8_V100</a>
